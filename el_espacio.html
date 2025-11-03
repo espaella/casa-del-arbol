@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>El Espacio - Casa del Árbol</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .text-theme-600 { color: #059669; }
+    .bg-theme-600 { background-color: #059669; }
+    .bg-theme-700 { background-color: #047857; }
+    .bg-theme-900 { background-color: #064e3b; }
+    .border-theme-600 { border-color:#059669; }
+    .ring-theme-600:focus { ring-color:#059669; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header (mismo que index) -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="font-black text-2xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-emerald-800">🌳 Casa del Árbol</a>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="index.html#inicio" class="text-gray-600 hover:text-theme-600 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+            <a href="index.html#backline" class="text-gray-600 hover:text-theme-600 px-3 py-2 rounded-md text-sm font-medium">Backline</a>
+            <a href="el_espacio.html" class="text-theme-600 font-bold px-3 py-2 rounded-md text-sm font-medium">El Espacio</a>
+            <a href="index.html#contacto" class="bg-theme-600 text-white hover:bg-theme-700 px-4 py-2 rounded-md text-sm font-medium shadow-lg">Reserva</a>
+          </div>
+        </div>
+
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-theme-600 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-theme-600">
+            <span class="sr-only">Abrir menú</span>
+            <svg id="menu-icon-open" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="menu-icon-close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="index.html#inicio" class="text-gray-600 hover:text-theme-600 block px-3 py-2 rounded-md text-base font-medium">Inicio</a>
+        <a href="index.html#backline" class="text-gray-600 hover:text-theme-600 block px-3 py-2 rounded-md text-base font-medium">Backline</a>
+        <a href="el_espacio.html" class="text-theme-600 font-bold block px-3 py-2 rounded-md text-base font-medium">El Espacio</a>
+        <a href="index.html#contacto" class="bg-theme-600 text-white hover:bg-theme-700 block px-3 py-2 rounded-md text-base font-medium shadow-lg">Reserva</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content: Galería -->
+  <main>
+    <section id="galeria-page" class="py-16 md:py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">El Espacio</h2>
+          <p class="mt-4 text-lg text-gray-600">Un vistazo a Casa del Árbol.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="rounded-lg shadow-lg overflow-hidden">
+            <img src="https://i.postimg.cc/65BPhYnp/temp-image-for-default-share.jpg" alt="Vista Aérea 1" class="w-full h-64 object-cover">
+          </div>
+          <div class="rounded-lg shadow-lg overflow-hidden">
+            <img src="https://i.postimg.cc/L6mWVNLs/temp-image-for-default-share-2-1.jpg" alt="Vista Aérea 2" class="w-full h-64 object-cover">
+          </div>
+          <div class="rounded-lg shadow-lg overflow-hidden">
+            <img src="https://i.postimg.cc/Ghz5gGxp/Whats-App-Image-2025-11-01-at-18-05-54.jpg" alt="Foto Studio 1" class="w-full h-64 object-cover">
+          </div>
+          <div class="rounded-lg shadow-lg overflow-hidden">
+            <img src="https://i.postimg.cc/SNmPGDCp/Whats-App-Image-2025-11-01-at-18-05-54-1.jpg" alt="Foto Studio 2" class="w-full h-64 object-cover">
+          </div>
+          <div class="rounded-lg shadow-lg overflow-hidden">
+            <img src="https://i.postimg.cc/sD3LJw7z/Whats-App-Image-2025-11-01-at-18-05-54-2.jpg" alt="Foto Studio 3" class="w-full h-64 object-cover">
+          </div>
+          <div class="rounded-lg shadow-lg overflow-hidden">
+            <img src="https://i.postimg.cc/J4K2YZ54/Whats-App-Image-2025-11-01-at-18-05-55.jpg" alt="Foto Studio 4" class="w-full h-64 object-cover">
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+      <p>&copy; 2025 Casa del Árbol. Todos los derechos reservados.</p>
+      <p class="mt-2 text-sm">Un proyecto de <span class="font-bold text-gray-300">ELLA</span>.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Menú móvil (mismo script)
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIconOpen = document.getElementById('menu-icon-open');
+    const menuIconClose = document.getElementById('menu-icon-close');
+
+    if (menuButton) {
+      menuButton.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.toggle('hidden');
+        menuIconOpen.classList.toggle('hidden', !isOpen);
+        menuIconClose.classList.toggle('hidden', isOpen);
+      });
+
+      document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuIconOpen.classList.remove('hidden');
+          menuIconClose.classList.add('hidden');
+        });
+      });
+    }
+  </script>
+</body>
+</html>
